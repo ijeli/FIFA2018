@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "Dusha V5";
+    src: url(worldcupfont.ttf);
+}
+
+.container {
+    min-width: 1230px;
+}
+
+body{
+    font-family: "Dusha V5", sans-serif;
+    background-size: 100% !important;
+}
+
+span {
+    padding: 0 4% 0 4%;
+}
+
+/* .team-info {
+    background: url("../images/BestBack.jpg") no-repeat;
+} */
+
+#flag {
+    height: 10%;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.game-header {
+    font-size: 25px;
+}
+
+.game-text {
+    font-size: 20px;
+}
+
+/*************/
+.header {
+    color: #444;
+    background: rgba(255,255,255, .95);
+    text-align: center;
+    font-size: 3em;
+    width: 50%;
+    display: block;
+    margin: 5% auto 0 auto;
+    border-radius: 10px;
+}
+
+header div {
+    font-size: 2.5em;
+    margin-bottom: 5%;
+}
+
+.team-info div {
+    color: #444;
+    background: rgba(255,255,255, .95);
+    border-radius: 10px;
+    padding:20px;
+}
+
+footer {
+    padding: 25px 0 5px 0;
+    background: #fff;
+    line-height: 30px;
+    text-align:center;
+    font-size: 3em;
+    vertical-align: baseline;
+    height:75px;
+}
+
+
+
+.placeholder p {
+    padding: 13% 0 35px;
+    background: #fff;
+    line-height: 30px;
+    text-align:center;
+    height: 500px;
+    font-size: 3em;
+}
+
+#help {
+    background: transparent;
+}
+
+#follow-teams {
+    min-height: 400px;
+    padding:20px;
+}
+
+#entertainment{
+    padding: 20px;
+}
+
+td, h1, th {
+    text-align: center;
+}
+
+#nav1
+{  
+    background-color:rgba(255, 0, 0, .7);
+    color:white;    
+}
+
+#nav1 a {
+    color:white;
+}
+
+.current-score-table {
+    background-color: #1362A4;
+    color:white;
+}
+
+.current-score-table td {
+    background-color: #d6e0f5;
+    color: #444;
+}
+
+.yesterday-games-table {
+    background-color:#ffff4d;
+    color: #444;
+}
+
+.yesterday-games-table td {
+    background-color: #ffffe6;
+    color: #444;
+}
+
+.yesterday-games-table th {
+    font-size: 1.2em;
+}
+
+.tomorrow-games-table {
+    background-color:#39e600;
+    color: #444;
+}
+
+.tomorrow-games-table td {
+    background-color: #ecffe6;
+    color: #444;
+}
+
+.tomorrow-games-table th {
+    font-size: 1.2em;
+}
+
+.header {
+    color: #444;
+}
+
+.section-style {
+    border-top: 11px solid red;
+    border-bottom: 11px solid red;
+}
+
+
+.cantseeme {
+    color: white;
+    background-color: #1362A4;
+    opacity: .80;
+}
+
+.cantseeme1 {
+    color: white;
+    background-color: red;
+    opacity: .80;
+}
+
+/*Follow Teams Section*/
+.current-score-table {
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear; /* Safari */
+    animation: spin 2s linear;
+}
+
+/* @-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} */
+
+
+
