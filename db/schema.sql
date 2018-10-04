@@ -1,0 +1,7 @@
+DROP DATABASE IF EXISTS fifa2018_db;
+CREATE DATABASE fifa2018_db;
+
+use fifa2018_db;
+
+
+

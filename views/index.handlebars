@@ -1,12 +1,21 @@
-<div class = 'jumbotron'>
+<div class = 'jumbotron primary' align = 'center'>
     <h1>WELCOME TO FIFA WORLD CUP SCORE PAGE</h1>
+    <br>
+    <button id = 'homebutton' class = 'btn btn-outline-primary btn-lg hidden'><a href = '/' style = 'text-decoration: none;'>HOME</a></button>
 </div>
+
 
 <div id = 'openingprompt' class = 'container'>
     <div class = 'row'>
         <div class = 'col-lg-12' align = 'center'>
             <div class="card text-center" style="width: 25rem;">
+                <div class="card-title">
+                    <h2>RUSSIA 2018 WORLD CUP</h2>
+                </div>
                 <img class="card-img-top" src="/public/assets/images/fifa2018.png" alt="fifa2018">
+                <div class="card-title">
+                    <h5>Start viewing FIFA profile!</h5>
+                </div>
                 <div class="card-body">
                     <button id = 'loginbutton' class = 'btn btn-primary btn-lg'>Login</button>
                     <br><br>
@@ -16,6 +25,8 @@
         </div>
     </div>
 </div>
+
+<br> 
 
 <div id = 'newuserprompt' class = 'container hidden'>
     <div class = 'row'>
@@ -45,6 +56,8 @@
     </div>
 </div>
 
+<br>
+
 <div id = 'loginprompt' class = 'container hidden'>
     <div class = 'row'>
         <div class = 'col-lg-12' align = 'center'>
@@ -68,6 +81,8 @@
     </div>
 </div>
 
+<br>
+
 <div id = 'content' class = 'container hidden'>
     <div align = 'center'>
         <h1>Welcome <span id = 'usernameplaceholder'></span></h1>
@@ -81,24 +96,32 @@
     </div>
     <br>
     <div align = 'center'>
-        <h3>Load of the day (MM/DD)</h3>
+        <h3>Load the match by the day (MM/DD)</h3>
         <br>
         <textarea id="monthofmatch" rows="1" cols="3"></textarea>  <textarea id="dayofmatch" rows="1" cols="3"></textarea>
         <br>
         <button id = 'matchsubmit' class = 'btn btn-primary'>Submit</button>
     </div>
     <br>
-    <div id = 'tableofMatches' class = 'hidden'>
-        <table class= "table yesterday-games-table" style = "width: 100%">
-            <thead>
-                <tr>
-                    <th scope="col">Team 1</th>
-                    <th scope="col">Team 2</th>
-                    <th scope="col">Winner</th>
-                </tr>
-            </thead>
-                <tbody id= "pastmatches">
-            </tbody>
-        </table>
+    <div class = 'row'>
+        <div class = 'col-lg-3'></div>
+        <div class = 'col-lg-6'>
+            <div id = 'tableofMatches' class = 'hidden'>
+                <table class= "table" style = "width: 100%">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Team 1</th>
+                            <th scope="col">Team 2</th>
+                            <th scope="col">Winner</th>
+                        </tr>
+                    </thead>
+                        <tbody id= "pastmatches">
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
+
+<br>

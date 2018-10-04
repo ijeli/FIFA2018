@@ -2,12 +2,14 @@ $('#loginbutton').on('click', function(event) {
     event.preventDefault();
     $('#loginprompt').removeClass("hidden");
     $('#openingprompt').addClass("hidden");
+    $('#homebutton').removeClass("hidden");
 });
 
 $('#newuserbutton').on('click', function(event) {
     event.preventDefault();
     $('#newuserprompt').removeClass("hidden");
     $('#openingprompt').addClass("hidden");
+    $('#homebutton').removeClass("hidden");
 });
 
 $('#loginsubmitbutton').on('click', function(event) {
@@ -45,6 +47,8 @@ $('#newusersubmitbutton').on('click', function(event) {
         console.log(data);
         $('#newuserprompt').addClass("hidden");
         $('#content').removeClass("hidden");
+        $('#usernameplaceholder').text(profiledata.userName);
+        $('#teamplaceholder').text(profiledata.teamName);
     });
 });
 
@@ -73,13 +77,13 @@ $('#matchsubmit').on('click', function(event) {
             tbodymatch = $("#pastmatches");
             // $('tr').empty();
             var newRow = $(
-                "<tr><td>" + searchq + "</td></tr><tr><td>" + results[i].home_team.code + " | " + results[i].home_team.goals + "</td><td>"
-                + results[i].away_team.code + " | " + results[i].away_team.goals + "</td><td>" + results[i].winner + "</td></tr>"
+                "<tr><td><strong>" + searchq + "</strong></td><td>" + results[i].home_team.country + " | " + results[i].home_team.goals + "</td><td>"
+                + results[i].away_team.country + " | " + results[i].away_team.goals + "</td><td>" + results[i].winner + "</td></tr>"
             );
 
             if ((moment(convertSliced).format("YYYY-MM-DD")) === searchq) {
                 //console.log(this);
-                tbodymatch.append(newRow);
+                tbodymatch.prepend(newRow);
             }
         }
     });
