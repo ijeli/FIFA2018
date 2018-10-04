@@ -57,7 +57,7 @@ $('#matchsubmit').on('click', function(event) {
     var queryURL3 = "https://worldcup.sfg.io/matches";
     var month = $('#monthofmatch').val().trim();
     var day = $('#dayofmatch').val().trim();
-    var searchq = "2018-" + month + "-" + day; 
+    var searchq = "2018-" + month + "-" + day; //ex. 2018-07-02
     console.log(searchq);
 
     $.ajax({
