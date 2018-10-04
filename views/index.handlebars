@@ -79,4 +79,26 @@
             <button id = 'loadteambutton' class = 'btn btn-primary' href = '/teampage'>My Teams Page</button>
         </div>
     </div>
+    <br>
+    <div align = 'center'>
+        <h3>Load of the day (MM/DD)</h3>
+        <br>
+        <textarea id="monthofmatch" rows="1" cols="3"></textarea>  <textarea id="dayofmatch" rows="1" cols="3"></textarea>
+        <br>
+        <button id = 'matchsubmit' class = 'btn btn-primary'>Submit</button>
+    </div>
+    <br>
+    <div id = 'tableofMatches' class = 'hidden'>
+        <table class= "table yesterday-games-table" style = "width: 100%">
+            <thead>
+                <tr>
+                    <th scope="col">Team 1</th>
+                    <th scope="col">Team 2</th>
+                    <th scope="col">Winner</th>
+                </tr>
+            </thead>
+                <tbody id= "pastmatches">
+            </tbody>
+        </table>
+    </div>
 </div>
