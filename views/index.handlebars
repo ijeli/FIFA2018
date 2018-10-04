@@ -1,0 +1,82 @@
+<div class = 'jumbotron'>
+    <h1>WELCOME TO FIFA WORLD CUP SCORE PAGE</h1>
+</div>
+
+<div id = 'openingprompt' class = 'container'>
+    <div class = 'row'>
+        <div class = 'col-lg-12' align = 'center'>
+            <div class="card text-center" style="width: 25rem;">
+                <img class="card-img-top" src="/public/assets/images/fifa2018.png" alt="fifa2018">
+                <div class="card-body">
+                    <button id = 'loginbutton' class = 'btn btn-primary btn-lg'>Login</button>
+                    <br><br>
+                    <button id = 'newuserbutton' class = 'btn btn-primary'>New User</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = 'newuserprompt' class = 'container hidden'>
+    <div class = 'row'>
+        <div class = 'col-lg-12' align = 'center'>
+            <div class = 'card text-center' style = 'width: 40rem;'>
+                <div class = 'card-body'>
+                    <div class = 'row'>
+                        <div class = 'col-lg-6'>
+                            What's your username?
+                            <br>
+                            <textarea id="newusernameinput" rows="1" cols="25"></textarea>
+                        </div>
+                        <div class = 'col-lg-6'>
+                            What team would you like to follow? 
+                            <br>
+                            <textarea id="newteaminput" rows="1" cols="25"></textarea>
+                        </div>
+                    </div>
+                    <div class = 'row'>
+                        <div class = 'col-lg-12' >
+                            <button id = 'newusersubmitbutton' class = 'btn btn-primary'>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
+
+<div id = 'loginprompt' class = 'container hidden'>
+    <div class = 'row'>
+        <div class = 'col-lg-12' align = 'center'>
+            <div class = 'card text-center' style = 'width: 40rem;'>
+                <div class = 'card-body'>
+                    <div class = 'row'>
+                        <div class = 'col-lg-12'>
+                            Username: 
+                            <br>
+                            <textarea id="usernameinput" rows="1" cols="20"></textarea>
+                        </div>
+                    </div>
+                    <div class = 'row'>
+                        <div class = 'col-lg-12' >
+                            <button id = 'loginsubmitbutton' class = 'btn btn-primary'>Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = 'content' class = 'container hidden'>
+    <div align = 'center'>
+        <h1>Welcome <span id = 'usernameplaceholder'></span></h1>
+        <br>
+        <h3>Lets go  <span id = 'teamplaceholder'></span>! </h3>
+    </div>
+    <div class = 'row'>
+        <div class = 'col-lg-12' align = 'center'>
+            <button id = 'loadteambutton' class = 'btn btn-primary' href = '/teampage'>My Teams Page</button>
+        </div>
+    </div>
+</div>
